@@ -36,7 +36,23 @@ footer{
 .cardEffect:hover{
   transform: translateY(-.1rem);
 }
-
+.g-btn{
+    width: fit-content;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .8rem 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+}
+.g-btn:hover{
+  /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); */
+  background: rgba(255, 255, 255, 0.3);
+}
 
 
 @media (min-width: 768px) {
@@ -45,7 +61,13 @@ footer{
   }
 }
 @media (max-width:1250px){
-
+  .heroTitle {
+    font-size: 1.7rem !important;
+    font-weight: 600;
+  }
+  .heroDesc {
+    font-size: 1rem !important;
+  }
 }
 @media (max-width:992px){
   .heroContainer {
@@ -71,6 +93,7 @@ footer{
   }
   .heroLeft {
     text-align: center;
+    align-items: center;
   }
   .heroLeft,
   .heroRight {
