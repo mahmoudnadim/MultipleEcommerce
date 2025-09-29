@@ -1,8 +1,13 @@
 @import "tailwindcss";
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   color: #fff;
+}
+.lang{
+  font-family: "Poppins", sans-serif;
+}
+.ar{
+  font-family: "Cairo", sans-serif;
 }
 body{
   background: linear-gradient(135deg,#0c0c0c,#1a1a2e 15%,#16213e 35%,#0f3460 50%,#533a7d 70%,#8b5a8c,#a0616a);

@@ -1,11 +1,15 @@
 import './App.css'
 import { Hero, VideoSection, Mainfeatures, AboutProject } from './Sections'
+import Nav from "./components/Nav/Nav"
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const {t,i18n} = useTranslation()
+  document.body.className = i18n.language === 'ar' ? 'ar': 'lang';
 
   return (
     <>
-        <nav className='text-center text-3xl'><a href="/">Multiple Ecommerce</a></nav>
+        <Nav />
         <Hero />
         <VideoSection />
         <AboutProject />
